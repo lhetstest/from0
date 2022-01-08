@@ -1,0 +1,58 @@
+.header-top {
+    background-color: var(--gray);
+    height: 50px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top__options {
+    display: flex;
+}
+
+.header-top__delivery{
+    margin-left: 44px;
+    margin-right: 82px;
+}
+
+.header-top__store-info {
+    display: flex;
+}
+
+.header-top__text {
+    margin-right: 24px;
+}
+
+.header-bottom{
+    background-color: var(--green);
+    height: 110px;
+    
+}
+
+.header-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.header-bottom-icons button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header-bottom-icons button:hover {
+   filter: opacity(0.5);
+}

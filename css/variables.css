@@ -1,5 +1,8 @@
 :root {
     --white: #fff;
     --green: #63A60F;
-    --gray: #31352B;
+    --dark-gray: #31352B;
+    --gray: #505050;
+    --light-gray: #f6f6f6;
+    --red: #CF3E3B;
 }
