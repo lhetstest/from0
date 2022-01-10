@@ -1,46 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Fresh OK</title>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Fresh OK | Магазин свежих продуктов</title>
 </head>
 <body>
     <header class="header">
-            <div class="header-top">
+        <nav class="header__nav">
+            <div class="header__top">
                 <div class="container">
-                    <div class="header-top__options">                    
-                        <p class="header-top__delivery">Адрес и время доставки</p>
-                        <p class="header-top__hot-line">Горячая линия 24/7</p>
-                    </div>
-                    <div class="header-top__store-info">
-                        <p class="header-top__text">Доставка</p>
-                        <p class="header-top__text">О нас</p>
-                        <p class="header-top__text">Новости</p>
-                    </div>
+                    <ul class="header__top-options">
+                        <li class="header__top-option">Адрес и время доставки</li>
+                        <li class="header__top-option">Горячая линия 24/7</li>
+                    </ul>
+                    <ul class="header__top-store">
+                        <li class="header__top-text">Доставка</li>
+                        <li class="header__top-text">О нас</li>
+                        <li class="header__top-text">Новости</li>
+                    </ul>
                 </div>                
             </div>
-            <div class="header-bottom">
+            <div class="header__bottom">
                 <div class="container">
-                    <img src="./images/logo.svg" alt="logo" class="logo">
-                    <div class="header-bottom__catalog">Каталог продуктов</div>
-                    <div class="header-bottom__search-for">Найти в магазине ...</div>
-                    <button value="Поиск"></button>
-                    <div class="header-bottom-icons">
-                        <button><img src="./images/userpic.svg" alt="userpic"></button>
-                        <button><img src="./images/icon-heart.svg" alt="heart-icon"></button>
-                        <button><img src="./images/checkout.svg" alt="checkout icon"></button>
+                    <a class="logo-link" href="#"><img class="logo" src="./images/logo.svg" alt="logo" ></a>
+                    <div class="dropdown">
+                        <button class="dropdown__btn">Каталог продуктов</button>
+                        <ul class="dropdown__list">
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Бакалея</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Молочные продукты</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Овощи и фрукты</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Хлеб</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Мясо</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Колбаса</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Рыба</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Алкоголь</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Напитки</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Торты</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Сыр</a></li>
+                            <li class="dropdown__item"> <a class="dropdown__link" href="#">Чай, кофе</a></li> 
+                        </ul>
+                    </div>
+                    <form class="header__search">
+                        <input class="header__search-field" type="search" placeholder="Найти в магазине ...">  
+                        <button class="header__search-btn" type="button">Поиск</button>
+                    </form>
+                    
+                    <div class="header__icons">
+                        <a class="header__userpic" href="#"><img src="./images/userpic.svg" alt="userpic"></a>
+                        <button class="header__heart-btn" type="button"><img class="header__heart-pic" src="./images/icon-heart.svg" alt="heart-icon"></button>
+                        <button class="header__checkout-btn" type="button"><img class="header__checkout-pic" src="./images/checkout.svg" alt="checkout icon"></button>                      
                     </div>
                 </div>
             </div>
+        </nav>            
     </header>
+
     <main>
         <section class="rotator">
-            <div class="container"></div>
-            <div class="container"></div>
-            <div class="container"></div>
+            <div class="container">
+                <h1 class="rotator__title">
+                    Свежачок вам в хату
+                    <span>скидка -50%</span>
+                </h1>
+                <p class="rotator__info">Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!</p>
+                <button class="rotator__btn" type="submit">Купить сейчас</button>
+            </div>
+            <div class="container">
+                <h1 class="rotator__title">
+                    <span></span>
+                </h1>
+                <p class="rotator__info"></p>
+                <button class="rotator__btn" type="submit">Купить сейчас</button>
+            </div>
+            <div class="container">
+                <h1 class="rotator__title">
+                    <span></span>
+                </h1>
+                <p class="rotator__info"></p>
+                <button class="rotator__btn" type="submit">Купить сейчас</button>
+            </div>
         </section>
         <section class="conditions">
             <div class="container">
@@ -108,5 +151,6 @@
         </div>
     </footer>
     <script src="./js/index.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

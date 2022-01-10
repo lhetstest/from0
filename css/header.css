@@ -1,47 +1,44 @@
-.header-top {
-    background-color: var(--gray);
+.header__top {
+    background-color: var(--dark-800);
     height: 50px;
     color: var(--white);
     text-transform: uppercase;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 1.36;
+    line-height: 1.4;
     letter-spacing: 0.03em;
     text-align: left;
-
 }
 
-.header-top .container {
+.header__top .container {
     display: flex;
     justify-content: space-between;
 }
 
-.header-top__options {
+.header__top-options {
     display: flex;
 }
 
-.header-top__delivery{
+.header__top-option{
     margin-left: 44px;
     margin-right: 82px;
 }
 
-.header-top__store-info {
+.header__top-store {
     display: flex;
 }
 
-.header-top__text {
+.header__top-text {
     margin-right: 24px;
 }
 
-.header-bottom{
-    background-color: var(--green);
-    height: 110px;
-    
+.header__bottom {
+    background-color: var(--green-900);
+    height: 110px;    
 }
 
-.header-bottom .container {
+.header__bottom .container {
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -56,3 +53,71 @@
 .header-bottom-icons button:hover {
    filter: opacity(0.5);
 }
+
+.dropdown__btn {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-900);
+    background-color: var(--white);
+    border: 0;
+    width: 240px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.dropdown__list {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.header__search {
+    display: flex;
+    width: 576px;
+    height: 50px;
+
+}
+
+.header__search-field {
+    border: 0;
+    border-radius: 6px 0 0 6px;
+    width: 420px;
+}
+
+.header__search-field::placeholder {
+    color: var(--dark-500);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 52px;
+}
+
+.header__search-btn {
+    border: 0;
+    border-radius: 0 6px 6px 0;
+    background-color: var(--dark-800);
+    color: var(--white);
+    width: 154px;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header__icons{
+    display: flex;  
+    align-items: center; 
+    height: 50px;
+}
+
+.header__heart-btn, .header__checkout-btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
