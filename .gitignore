@@ -1,1 +1,10 @@
 .vscode
+.DS_Store
+.idea/
+.idea/*
+npm-debug.*
+
+dist/
+node_modules/
+package-lock.json
+app/css/*
