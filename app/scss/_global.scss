@@ -25,7 +25,7 @@ html, body{
         
     }
     
-    &__list{
+    &__lists{
         display: flex;
         height: 140px;
         justify-content: space-between;
@@ -48,6 +48,12 @@ html, body{
             a {
                 color: $white;
             }
+        }
+        &-socials {
+
+        }
+        &-social:nth-child() {
+
         }
 
 
