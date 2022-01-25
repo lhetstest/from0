@@ -1,5 +1,5 @@
 .rotator__title{
-    font-family: "Ruda Bold";
+    font-family: "Ruda";
     font-weight: 900;
     font-size: 60px;    
     color: $dark-500;
@@ -11,8 +11,26 @@
 }
 
 .rotator__info{
-    font-family: "Open Sans Regular"; 
+    font-family: "Open Sans"; 
+    font-weight: 400;
     color: $dark-500;
     font-size: 16px;
     line-height: 1.4;
+
+}
+
+.rotator {
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 181px;
+        height: 47px;
+        padding: 12px 24px;
+        background-color: $green-900;
+        border-radius: 6px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 18px;
+    }
 }

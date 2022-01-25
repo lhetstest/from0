@@ -1,86 +1,106 @@
 .footer {
     background-color: $dark-800;
     color: $white;
-    
+    font-family: "Open Sans";
+
     &__top{
-        display: flex;
         border-bottom: 1px solid $dark-500;
-        
-        &-logo {
-            padding: 10px;
-        }
-
-        &-lists {
-            display: flex;
-            height: 140px;
-            justify-content: space-between;
-        }
-
-        &-subscription {
-         label{
-                display: block;
-            }
-        }
-
-        &-links {
-            display: grid;
-            grid-template-columns: 200px 200px 200px;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-
-        &-item {
-            width: 210px;            
-            // margin-bottom: 10px;
-            a {
-                color: $white;
-            }
-        }
-        &-socials {
-            display: flex;
-            }
-        &-subscription{
-            &-email {
-                width: 180px;
-                height: 40px;
-                border: 0;
-                border-radius: 6px 0 0 6px;
-                padding-left: 12px;
-            }
-            &-submit {
-                background-color: $green-900;
-                height: 40px;
-                color: $white;
-                border: 0;
-                border-radius: 0 6px 6px 0;
-                text-transform: uppercase;
-                font-family: "Open Sans Bold"; 
-                font-size: 12px;
-            }
-        }
-
     }
 
-    &__bottom {
-        height: 78px;
-        border-top: 1px solid $dark-800;
-        
-        &.container{
-           display: grid; 
-           grid-template-columns: 1fr 1fr;
-           grid-template-rows: 1fr;
-        }
-        &-copy {
-            text-transform: uppercase;
-            font-weight: 400;
-        }
+    &__top-container{
+        display: flex;
+        flex-direction: column;
+    }
 
-        &-payments {
-            display: flex;
-            flex-direction: row;
+    &__top-logo {
+        height: 120px;
+        display: flex;
+        align-items: center;        
+    }
+
+    &__top-lists {
+        height: 140px;
+        display: flex;        
+        justify-content: space-between;
+    }
+
+    &__top-subscription{
+        display: flex;
+        flex-wrap: wrap;
+        width: 306px;
+        height: 72px;
         }
-        &-payment:nth-child(1) {
-            margin-right: 24px;
+    
+    &__top-subscription label {
+        margin-bottom: 18px;
+    }
+
+    &__top-email {
+        width: 180px;
+        height: 40px;
+        border: 0;
+        border-radius: 6px 0 0 6px;
+        padding-left: 12px;
+    }
+
+    &__top-submit {
+        background-color: $green-900;
+        height: 40px;
+        color: $white;
+        border: 0;
+        border-radius: 0 6px 6px 0;
+        text-transform: uppercase; 
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    &__top-links {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    &__top-item {
+        width: 210px;            
+        a {
+            color: $white;
         }
+    }
+    
+    &__top-address {
+        margin-bottom: 18px;
+    }
+    
+    &__top-socials {
+        display: flex;
+        justify-content: start;
+    }
+    &__top-social:not(:last-child) {
+        margin-right: 12px;
+    }
+    
+
+    &__bottom {
+        border-top: 1px solid $dark-800;        
+    }
+    &__bottom .container{
+        height: 78px;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__bottom-copy {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__bottom-payments {
+        display: flex;
+        flex-direction: row;
+    }
+    &__bottom-payment:not(:last-child) {
+        margin-right: 24px;
     }
 }
 
