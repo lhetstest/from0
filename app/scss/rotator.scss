@@ -1,18 +1,18 @@
 .rotator__title{
-    font-family: 'Ruda', sans-serif;
+    font-family: "Ruda Bold";
     font-weight: 900;
     font-size: 60px;    
-    color: var(--dark-500);
+    color: $dark-500;
 }
 
 .rotator__title span {
     display: block;
-    color: var(--red-900);
+    color: $red-900;
 }
 
 .rotator__info{
-    font-family: 'Open Sans', sans-serif;
-    color: var(--dark-500);
+    font-family: "Open Sans Regular"; 
+    color: $dark-500;
     font-size: 16px;
     line-height: 1.4;
 }

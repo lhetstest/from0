@@ -38,6 +38,26 @@
         &-socials {
             display: flex;
             }
+        &-subscription{
+            &-email {
+                width: 180px;
+                height: 40px;
+                border: 0;
+                border-radius: 6px 0 0 6px;
+                padding-left: 12px;
+            }
+            &-submit {
+                background-color: $green-900;
+                height: 40px;
+                color: $white;
+                border: 0;
+                border-radius: 0 6px 6px 0;
+                text-transform: uppercase;
+                font-family: "Open Sans Bold"; 
+                font-size: 12px;
+            }
+        }
+
     }
 
     &__bottom {
