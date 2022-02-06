@@ -1,24 +1,3 @@
-.image-slider__slide {
-    height: 600px;   
-    display: flex;
-    align-items: center;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.image-slider__slide:nth-child(1){
-    background-image: url('../images/slider-img/carrot.jpg');
-}
-
-.image-slider__slide:nth-child(2){
-    background-image: url('../images/slider-img/tomato.jpg');
-}
-
-.image-slider__slide:nth-child(3){
-    background-image: url('../images/slider-img/greens.jpg');
-}
-
 .rotator {
     &__inner-box{
         width: 1290px;
@@ -66,5 +45,23 @@
         font-weight: 400;
         font-size: 18px;
     }    
+}
+
+.image-slider__slide {
+    height: 600px;   
+    display: flex;
+    align-items: center;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &--veggy{
+        background-image: url('../images/slider-img/carrot.jpg');
+    }
+    &--tomato {
+        background-image: url('../images/slider-img/tomato.jpg');
+    }
+    &--green {
+        background-image: url('../images/slider-img/greens.jpg');
+    }
 }
 

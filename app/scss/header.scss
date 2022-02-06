@@ -1,6 +1,8 @@
+
 .header{
     text-transform: uppercase;
-    font-family: 'Open Sans Bold';
+    font-family: 'Open Sans';
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.03em;
@@ -14,10 +16,9 @@
     }
 
     &__top .container {
-        display: flex; 
-        align-items: center;       
+        display: flex;     
         justify-content: space-between;
-        
+        padding: 14px;
     }
 
     &__top-options{
@@ -25,10 +26,25 @@
     }
 
     &__top-option {
+        display: flex;
         margin-left: 44px;
         margin-right: 82px;
     }
-
+    &__icon {
+        margin-right: 12px;
+        &--address {
+            background-image: url('../images/icons/address.svg');
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 22px;
+        }
+        &--phone{
+            background-image: url('../images/icons/phone-icon.svg');
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 22px;
+        }
+    }
     &__top-store{
         display: flex;
     }
