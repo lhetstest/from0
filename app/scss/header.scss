@@ -37,12 +37,14 @@
             background-repeat: no-repeat;
             width: 32px;
             height: 22px;
+            cursor: pointer;
         }
         &--phone{
             background-image: url('../images/icons/phone-icon.svg');
             background-repeat: no-repeat;
             width: 22px;
             height: 22px;
+            cursor: pointer;
         }
     }
     &__top-store{

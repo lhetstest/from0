@@ -1,2 +1,9 @@
-console.log('Hello, this is vegetables store');
-new Swiper('.image-slider');
+const swiper = new Swiper('.image-slider', {
+
+    //Navigation arrows:
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
